@@ -1,0 +1,31 @@
+			       Elizabethan Curses
+		     a more interesting Hello World program
+		      in every language I'm interested in
+			 http://trevorstone.org/curse/
+			  license-free, public domain
+
+When learning Perl in high school, the curse program was the first interesting
+code I wrote.  I started with a list of Elizabethan dialect adjectives and
+nouns compiled by Jerry Maguire, an English teacher at Center Grove High School
+in Greenwood, Indiana.  By combining two adjectives and a noun, you can create
+a curse or insult that sounds like it might have been written by William
+Shakespeare.
+
+Since that first Perl program, I've implemented the curse program in several
+languages as a way to exercise several important features:
+  * literal initialization
+  * arrays
+  * string manipulation
+  * functions
+  * looping
+  * input/output
+  * command-line arguments
+  * random number generation
+  * objects/classes (for languages that deem themselves object-oriented)
+
+Since these implementations are essentially more advanced "hello world"
+programs, all code is made available under the public domain, free for any use
+which the reader deems helpful.  Since curse was often the first program I
+wrote in a particular language, I make no claim of quality.  Suggestions for
+improving implementations or making them more idiomatic are welcome,
+thou peevish ill-composed hedgepig!
