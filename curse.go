@@ -7,8 +7,8 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
 	"os"
-	"rand"
 )
 
 type wordList struct {
