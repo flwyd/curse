@@ -116,7 +116,7 @@ def curse():
 
 def siteAndCurse(width):
   websites = ['http://trevorstone.org/', 'http://flwyd.livejournal.com/',
-    'http://twitter.com/flwyd']
+    'http://twitter.com/flwyd', 'http://profiles.google.com/trevorstone']
   while True:
     website = random.choice(websites)
     s = justify(website, curse(), width) 
@@ -124,7 +124,7 @@ def siteAndCurse(width):
       return s
 
 def commentFilter(s):
-  return None if s[0] == '#' else s
+  return None if len(s) == 0 or s[0] == '#' else s
 
 def embraceAndDoit(oneliners, width):
   toembrace = [ 'adaptation', 'art', 'beauty', 'chaos', 'change', 'choice',
@@ -146,7 +146,7 @@ if __name__ == '__main__':
   quotefiles = [os.path.expanduser(p) for p in quotefiles]
 
   print ''
-  print '--'
+  print '-- '
   print '=-=-=-= Trevor Stone -=- [Flwyd] -=- <tstone @ trevorstone.org> =-=-=-='
   print 'Computer science, eclectic philosophy, games, wits, esoterics, odd hats'
   print siteAndCurse(width)
