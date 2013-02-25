@@ -142,7 +142,7 @@ def embraceAndDoit(oneliners, width):
 
 if __name__ == '__main__':
   width = 71
-  quotefiles = ['~/lib/doitoneliners.txt', '~/lib/oneliners.txt']
+  quotefiles = ['~/lib/quotes/doitoneliners.txt', '~/lib/quotes/oneliners.txt']
   quotefiles = [os.path.expanduser(p) for p in quotefiles]
 
   print ''
