@@ -116,7 +116,8 @@ def curse():
 
 def siteAndCurse(width):
   websites = ['http://trevorstone.org/', 'http://flwyd.livejournal.com/',
-    'http://twitter.com/flwyd', 'http://profiles.google.com/trevorstone']
+    'https://twitter.com/flwyd', 'https://google.com/+TrevorStone',
+    'https://github.com/flwyd']
   while True:
     website = random.choice(websites)
     s = justify(website, curse(), width) 
