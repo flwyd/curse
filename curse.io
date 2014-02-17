@@ -63,6 +63,6 @@ curse := block("Thou " .. adjective1 .. " " .. adjective2 .. " " .. noun .. "!")
 
 # curse.io n will print n curses, without arguments will prompt user
 # first arg is script name
-if (System args size > 1, args at(1) asNumber repeat(curse call println),
+if (System args size > 1, System args at(1) asNumber repeat(curse call println),
   "Number of curses: " print;
   File standardInput readLine asString asNumber repeat(curse call println))
