@@ -51,7 +51,7 @@ public class Curse {
     "death-token", "dewberry", "dogfish", "egg-shell", "flap-dragon",
     "flax-wench", "flirt-gill", "foot-licker", "fustilarian", "giglet",
     "gudgeon", "gull-catcher", "haggard", "harpy", "hedge-pig", "hempseed",
-    "hedge-pig", "horn-beast", "hugger-mugger", "jack-a-nape", "jolthead",
+    "horn-beast", "hugger-mugger", "jack-a-nape", "jolthead",
     "lewdster", "lout", "maggot-pie", "malignancy", "malkin", "malt-worm",
     "mammet", "manikin", "measle", "minimus", "minnow", "miscreant",
     "moldwarp", "mumble-news", "nut-hook", "pantaloon", "pigeon-egg",

@@ -45,13 +45,13 @@ string adjective2[NUMADJECTIVE2] = { "base-court", "bat-fowling", "beef-witted",
     "toad-spotted", "unchin-snouted", "weak-hinged", "weather-bitten",
     "white-livered" };
 
-const int NUMNOUN = 74;
+const int NUMNOUN = 73;
 string noun[NUMNOUN] = { "apple-john", "baggage", "barnacle", "bladder",
     "boar-pig", "bugbear", "bum-bailey", "canker-blossom", "clack-dish",
     "clotpole", "coxcomb", "codpiece", "crutch", "cutpurse", "death-token",
     "dewberry", "dogfish", "egg-shell", "flap-dragon", "flax-wench",
     "flirt-gill", "foot-licker", "fustilarian", "giglet", "gudgeon",
-    "gull-catcher", "haggard", "harpy", "hedge-pig", "hempseed", "hedge-pig",
+    "gull-catcher", "haggard", "harpy", "hedge-pig", "hempseed",
     "horn-beast", "hugger-mugger", "jack-a-nape", "jolthead", "lewdster",
     "lout", "maggot-pie", "malignancy", "malkin", "malt-worm", "mammet",
     "manikin", "measle", "minimus", "minnow", "miscreant", "moldwarp",
@@ -123,7 +123,7 @@ int main(int argc, char* argv[]) {
   srandom(time(0));
   int n = 0;
   if (argc == 1) {
-    printf("Number of curses: ");
+    cout << "Number of curses: ";
     cin >> n;
   } else {
     n = atoi(argv[1]);

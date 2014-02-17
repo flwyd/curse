@@ -54,15 +54,14 @@ noun = WordList(("apple-john", "baggage", "barnacle", "bladder", "boar-pig",
     "coxcomb", "codpiece", "crutch", "cutpurse", "death-token", "dewberry",
     "dogfish", "egg-shell", "flap-dragon", "flax-wench", "flirt-gill",
     "foot-licker", "fustilarian", "giglet", "gudgeon", "gull-catcher",
-    "haggard", "harpy", "hedge-pig", "hempseed", "hedge-pig", "horn-beast",
-    "hugger-mugger", "jack-a-nape", "jolthead", "lewdster", "lout",
-    "maggot-pie", "malignancy", "malkin", "malt-worm", "mammet", "manikin",
-    "measle", "minimus", "minnow", "miscreant", "moldwarp", "mumble-news",
-    "nut-hook", "pantaloon", "pigeon-egg", "pignut", "puttock", "pumpion",
-    "rabbit-sucker", "rampallion", "ratsbane", "remnant", "rudesby", "ruffian",
-    "scantling", "scullion", "scut", "skainsmate", "snipe", "strumpet",
-    "varlot", "vassal", "waterfly", "whey-face", "whipster", "wagtail",
-    "younker"))
+    "haggard", "harpy", "hedge-pig", "hempseed", "horn-beast", "hugger-mugger",
+    "jack-a-nape", "jolthead", "lewdster", "lout", "maggot-pie", "malignancy",
+    "malkin", "malt-worm", "mammet", "manikin", "measle", "minimus", "minnow",
+    "miscreant", "moldwarp", "mumble-news", "nut-hook", "pantaloon",
+    "pigeon-egg", "pignut", "puttock", "pumpion", "rabbit-sucker", "rampallion",
+    "ratsbane", "remnant", "rudesby", "ruffian", "scantling", "scullion",
+    "scut", "skainsmate", "snipe", "strumpet", "varlot", "vassal", "waterfly",
+    "whey-face", "whipster", "wagtail", "younker"))
 
 lists = (adjective1, adjective2, noun)
 # print n curses to file-like object

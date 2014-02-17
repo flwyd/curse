@@ -46,15 +46,15 @@
 (define noun #("apple-john" "baggage" "barnacle" "bladder" "boar-pig"
   "bugbear" "bum-bailey" "canker-blossom" "clack-dish" "clotpole" "coxcomb"
   "codpiece" "crutch" "cutpurse" "death-token" "dewberry" "dogfish" "egg-shell"
-  "flap-dragon" "flax-wench" "flirt-gill" "foot-licker" "fustilarian" "giglet"
-  "gudgeon" "gull-catcher" "haggard" "harpy" "hedge-pig" "hempseed"
-  "hedge-pig" "horn-beast" "hugger-mugger" "jack-a-nape" "jolthead"
-  "lewdster" "lout" "maggot-pie" "malignancy" "malkin" "malt-worm" "mammet"
-  "manikin" "measle" "minimus" "minnow" "miscreant" "moldwarp"
-  "mumble-news" "nut-hook" "pantaloon" "pigeon-egg" "pignut" "puttock"
-  "pumpion" "rabbit-sucker" "rampallion" "ratsbane" "remnant" "rudesby"
-  "ruffian" "scantling" "scullion" "scut" "skainsmate" "snipe" "strumpet"
-  "varlot" "vassal" "waterfly" "whey-face" "whipster" "wagtail" "younker"))
+  "flap-dragon" "flax-wench" "flirt-gill" "foot-licker" "fustilarian"
+  "giglet" "gudgeon" "gull-catcher" "haggard" "harpy" "hedge-pig" "hempseed"
+  "horn-beast" "hugger-mugger" "jack-a-nape" "jolthead" "lewdster" "lout"
+  "maggot-pie" "malignancy" "malkin" "malt-worm" "mammet" "manikin" "measle"
+  "minimus" "minnow" "miscreant" "moldwarp" "mumble-news" "nut-hook"
+  "pantaloon" "pigeon-egg" "pignut" "puttock" "pumpion" "rabbit-sucker"
+  "rampallion" "ratsbane" "remnant" "rudesby" "ruffian" "scantling"
+  "scullion" "scut" "skainsmate" "snipe" "strumpet" "varlot" "vassal"
+  "waterfly" "whey-face" "whipster" "wagtail" "younker"))
 
 (define random-word
   (lambda (v) (vector-ref v (random (vector-length v)))))

@@ -56,7 +56,7 @@ var (
 		"clotpole", "coxcomb", "codpiece", "crutch", "cutpurse", "death-token",
 		"dewberry", "dogfish", "egg-shell", "flap-dragon", "flax-wench",
 		"flirt-gill", "foot-licker", "fustilarian", "giglet", "gudgeon",
-		"gull-catcher", "haggard", "harpy", "hedge-pig", "hempseed", "hedge-pig",
+		"gull-catcher", "haggard", "harpy", "hedge-pig", "hempseed",
 		"horn-beast", "hugger-mugger", "jack-a-nape", "jolthead", "lewdster",
 		"lout", "maggot-pie", "malignancy", "malkin", "malt-worm", "mammet",
 		"manikin", "measle", "minimus", "minnow", "miscreant", "moldwarp",
