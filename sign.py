@@ -114,7 +114,7 @@ def curse():
   return 'Thou %s!' % ' '.join([w.one() for w in lists])
 
 def siteAndCurse(width):
-  websites = ['http://trevorstone.org/', 'http://flwyd.livejournal.com/',
+  websites = ['https://trevorstone.org/', 'https://flwyd.livejournal.com/',
     'https://twitter.com/flwyd', 'https://google.com/+TrevorStone',
     'https://github.com/flwyd']
   while True:
