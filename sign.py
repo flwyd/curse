@@ -114,9 +114,10 @@ def curse():
   return 'Thou %s!' % ' '.join([w.one() for w in lists])
 
 def siteAndCurse(width):
-  websites = ['https://trevorstone.org/', 'https://flwyd.livejournal.com/',
-    'https://twitter.com/flwyd', 'https://google.com/+TrevorStone',
-    'https://github.com/flwyd']
+  websites = ('https://trevorstone.org/', 'https://flwyd.livejournal.com/',
+      'https://flwyd.dreamwidth.org/', 'https://twitter.com/flwyd',
+      'https://google.com/+TrevorStone', 'https://github.com/flwyd',
+      'https://www.flickr.com/photos/trevorstone')
   while True:
     website = random.choice(websites)
     s = justify(website, curse(), width) 
@@ -127,12 +128,13 @@ def commentFilter(s):
   return None if len(s) == 0 or s[0] == '#' else s
 
 def embraceAndDoit(oneliners, width):
-  toembrace = [ 'adaptation', 'art', 'beauty', 'chaos', 'change', 'choice',
-    'community', 'creativity', 'culture', 'curiosity', 'discovery',
-    'diversity', 'excitement', 'expression', 'existence', 'family',
-    'flow', 'friendship', 'inspiration', 'joy', 'laughter', 'metaphor',
-    'love', 'novelty', 'oddity', 'principle', 'self', 'singularity',
-    'solitude', 'spontaneity', 'surprise', 'wildness', 'wonder' ]
+  toembrace = ('adaptation', 'art', 'beauty', 'chaos', 'change', 'choice',
+      'community', 'creativity', 'culture', 'curiosity', 'discovery',
+      'diversity', 'excitement', 'expression', 'exploration', 'existence',
+      'family', 'flow', 'friendship', 'growth', 'inspiration', 'joy',
+      'knowledge', 'laughter', 'metaphor', 'love', 'novelty', 'oddity',
+      'principle', 'ritual', 'science', 'self', 'singularity', 'society',
+      'solitude', 'spontaneity', 'surprise', 'wildness', 'wonder')
   while True:
     embrace = '{embrace %s}' % random.choice(toembrace)
     doit = randline(oneliners, commentFilter)
