@@ -10,9 +10,9 @@
 const curse = function() {
 // Encapsulates a list of words
 class WordList {
-  constructor(words, randomFn) {
+  constructor(words, randomFn = Math.random) {
     this.words = words;
-    this.randomFn = randomFn || Math.random; // Need node 6.8 for default args
+    this.randomFn = randomFn;
   }
 
   randomWord() {
@@ -105,7 +105,7 @@ if (process && process.argv) {
       input: process.stdin,
       output: process.stdout,
     });
-    io.question('Enter a number: ', (num) => {
+    io.question('Number of curses: ', (num) => {
       printCurses(parseInt(num))
       io.close();
     });

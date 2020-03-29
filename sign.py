@@ -1,4 +1,4 @@
-#!/usr/bin/python -t
+#!/usr/bin/env python -t
 
 """Trevor Stone's random signature script."""
 
@@ -12,13 +12,13 @@ def randline(filename, *filters):
     seen = 0
     choice = ''
     for line in f:
-      line = line.rstrip() #always remove newline and trailing spaces
+      line = line.rstrip() # always remove newline and trailing spaces
       for filter in filters:
         line = filter(line)
         if not line:
           break
       if not line:
-        continue #because we can't continue to an outer loop
+        continue # because we can't continue to an outer loop
       seen += 1
       if random.randrange(0, seen) == 0:
         choice = line
@@ -53,11 +53,14 @@ def justify(a, b, width): # doesn't wrap lines!
     return a + ' ' + b
   return a + b.rjust(width - len(a))
 
-class WordList:  # provides random words from a list via string conversion
+class WordList:
+  """Provides random words from a list."""
+
   def __init__(self, items):
     self.items = items
 
   def one(self):
+    """Returns one random word."""
     return random.choice(self.items)
 
 # one-word adjectives

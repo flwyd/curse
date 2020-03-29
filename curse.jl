@@ -54,7 +54,7 @@ curse() = "Thou $(rand(adjectives1)) $(rand(adjectives2)) $(rand(nouns))!"
 
 # Get the number of curses.
 if length(ARGS) == 0
-  print("Enter a number: ")
+  print("Number of curses: ")
   curses = parse(UInt32, chomp(readline()))
 else
   curses = parse(UInt32, ARGS[1])

@@ -1,4 +1,4 @@
-#!/opt/local/bin/guile \
+#!/usr/bin/env guile \
 -e main -s
 !#
 ;#!/bin/sh
@@ -77,7 +77,7 @@
   (lambda (args)
     (curse-out (string->number (if (= 1 (length args))
                                  (begin
-                                   (display "Enter a number: ")
+                                   (display "Number of curses: ")
                                    (read-line))
                                  (cadr args)))
                (current-output-port))))

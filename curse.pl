@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!/usr/bin/env perl -w
 ##############################################################################
 # Shakespearian Curse Generator -- Based on lists compiled by Jerry Maguire, #
 #     English teacher at Center Grove High School in Greenwood, Indiana.     #
@@ -17,7 +17,7 @@ if (@ARGV && $ARGV[0] =~ /-h/) {
 #Get the number of curses
 my $number;
 unless ($number = shift) {
-    print "Enter a number: ";
+    print "Number of curses: ";
     $number = <STDIN>;
 }
 $number += 0;  # force numeric interpretation
