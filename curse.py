@@ -1,14 +1,16 @@
-#!/usr/bin/python -t
+#!/usr/bin/env python -t
 ##############################################################################
 # Shakespearian Curse Generator -- Based on lists compiled by Jerry Maguire, #
 #     English teacher at Center Grove High School in Greenwood, Indiana.     #
 # Public domain implementations by Trevor Stone http://trevorstone.org/curse #
 ##############################################################################
 
+from __future__ import print_function
 import sys
 import random
 
-class WordList:  # provides random words from a list via string conversion
+class WordList:
+    """Provides random words from a list via string conversion."""
     def __init__(self, items):
         self.items = items
 
@@ -64,16 +66,15 @@ noun = WordList(("apple-john", "baggage", "barnacle", "bladder", "boar-pig",
     "whey-face", "whipster", "wagtail", "younker"))
 
 lists = (adjective1, adjective2, noun)
-# print n curses to file-like object
-def curse(n=1, file=sys.stdout):  # unfortunately, no __str__ for a module
+def curse(n=1, file=sys.stdout):
+    """Print n curses to file-like object."""
     for i in range(n):
-        print >> file, "Thou " + " ".join([str(w) for w in lists]) + "!"
+        print('Thou', *[str(w) for w in lists], file=file)
 
 # When running as script, get number and do curses
 if __name__ == "__main__":
     if len(sys.argv) == 1:  # one arg is script name, interactive mode
-        print "Number of curses:",
-        n = input()
+        n = int(input('Number of curses: '))
         curse(n)
     else:
         curse(int(sys.argv[1]))
