@@ -1,4 +1,5 @@
-" vim -S curse.vim -c Curse
+#!/bin/sh
+"exec" /usr/bin/env vim -c 'Curse '$1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shakespearian Curse Generator -- Based on lists compiled by Jerry Maguire, "
 "     English teacher at Center Grove High School in Greenwood, Indiana.     "
@@ -83,8 +84,8 @@ function Curse(...)
 endfunction
 
 " Generate a number of curses and print them.  Prompts for a number if no
-" arguments are given
-function s:echoCurses(...)
+" arguments are given.
+function s:putCurses(...)
   if a:0 == 0
     let l:numCurses = input('Number of curses: ')
     " Insert newline after user input
@@ -92,10 +93,8 @@ function s:echoCurses(...)
   else
     let l:numCurses = a:1
   endif
-  for l:curse in Curse(l:numCurses)
-    echo l:curse
-  endfor
+  put! =Curse(l:numCurses)
 endfunction
 
 " :Curse [n] will print n curses, prompting if n is not specified
-command -nargs=? Curse call s:echoCurses(<args>)
+command -nargs=? Curse call s:putCurses(<args>)
