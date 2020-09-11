@@ -31,17 +31,15 @@ adjective2=(base-court bat-fowling beef-witted beetle-headed boil-brained \
   weak-hinged weather-bitten white-livered)
 
 noun=(apple-john baggage barnacle bladder boar-pig bugbear bum-bailey \
-  canker-blossom clack-dish clotpole coxcomb codpiece \
-  crutch cutpurse death-token dewberry dogfish egg-shell \
-  flap-dragon flax-wench flirt-gill foot-licker fustilarian giglet \
-  gudgeon gull-catcher haggard harpy hedge-pig hempseed \
-  horn-beast hugger-mugger jack-a-nape jolthead \
-  lewdster lout maggot-pie malignancy malkin malt-worm mammet \
-  manikin measle minimus minnow miscreant moldwarp \
-  mumble-news nut-hook pantaloon pigeon-egg pignut puttock \
-  pumpion rabbit-sucker rampallion ratsbane remnant rudesby \
-  ruffian scantling scullion scut skainsmate snipe strumpet \
-  varlot vassal waterfly whey-face whipster wagtail younker)
+  canker-blossom clack-dish clotpole coxcomb codpiece crutch cutpurse \
+  death-token dewberry dogfish egg-shell flap-dragon flax-wench flirt-gill \
+  foot-licker fustilarian giglet gudgeon gull-catcher haggard harpy hedge-pig \
+  hempseed horn-beast hugger-mugger jack-a-nape jolthead lewdster lout \
+  maggot-pie malignancy malkin malt-worm mammet manikin measle minimus minnow \
+  miscreant moldwarp mumble-news nut-hook pantaloon pigeon-egg pignut puttock \
+  pumpion rabbit-sucker rampallion ratsbane remnant rudesby ruffian scantling \
+  scullion scut skainsmate snipe strumpet varlot vassal waterfly whey-face \
+  whipster wagtail younker)
 
 # Sets $_word to a random selection of the function's arguments.
 function randomword() {
