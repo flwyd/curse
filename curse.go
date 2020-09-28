@@ -9,6 +9,7 @@ import (
 	"fmt"
 	"math/rand"
 	"os"
+	"time"
 )
 
 type wordList []string
@@ -71,6 +72,7 @@ func Curse() string {
 }
 
 func main() {
+	rand.Seed(time.Now().UnixNano())
 	var num int
 	if len(os.Args) > 1 {
 		assigned, err := fmt.Sscanf(os.Args[1], "%d", &num)
