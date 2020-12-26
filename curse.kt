@@ -60,14 +60,11 @@ fun curse(): String {
 }
 
 fun main(args: Array<String>) {
-  var count: Int
-  if (args.isEmpty()) {
+  var count = if (args.isEmpty()) {
     print("Number of curses: ")
-    count = readLine()?.toIntOrNull() ?: 0
+    readLine()?.toIntOrNull()
   } else {
-    count = args[0].toIntOrNull() ?: 0
-  }
-  for (x in 1..count) {
-    println(curse())
-  }
+    args[0].toIntOrNull()
+  } ?: 0
+  generateSequence(::curse).take(count).forEach(::println);
 }
