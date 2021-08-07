@@ -6,7 +6,7 @@
 " Public domain implementations by Trevor Stone http://trevorstone.org/curse "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" NOTE: VimL doesn't have a rand() function, so this script depends on
+" NOTE: rand() was added in Vim 8.1.2342; this script falls back to
 " https://github.com/fleischie/vim-rando
 
 " Lists of words
@@ -56,7 +56,12 @@ let s:noun = ['apple-john', 'baggage', 'barnacle', 'bladder', 'boar-pig',
 
 " Returns a random word from a list
 function s:randWord(words)
-  return a:words[float2nr(GetRandomNumber() * len(a:words))]
+  if exists('*rand')
+    let l:index = rand() % len(a:words)
+  else
+    let l:index = float2nr(GetRandomNumber() * len(a:words))
+  endif
+  return a:words[l:index]
 endfunction
 
 " Returns one curse as a string
