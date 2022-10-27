@@ -55,8 +55,8 @@ defmodule Curse do
 end
 
 help = fn ->
-  IO.puts("Usage: curse [-h] [n] (n is the number of curses you want)")
-  System.stop(1)
+  IO.puts("Usage: #{:escript.script_name()} [-h] [n] (n is the number of curses you want)")
+  System.halt(1)
 end
 
 # Get number of curses to print as a string
@@ -71,5 +71,5 @@ num =
 # Print them all
 case Integer.parse(num) do
   {n, _} when n > 0 -> for _ <- 1..n, do: IO.puts(Curse.curse())
-  _ -> IO.puts("Must be positive number: #{num}")
+  _ -> (IO.puts("Must be positive number: #{num}"); help.())
 end
