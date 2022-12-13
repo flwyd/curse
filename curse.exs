@@ -50,7 +50,7 @@ defmodule Curse do
   end
 
   defp pick(words) do
-    elem(words, :rand.uniform(tuple_size(words)) - 1)
+    elem(words, Enum.random(1..tuple_size(words)) - 1)
   end
 end
 
