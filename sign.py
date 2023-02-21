@@ -1,4 +1,4 @@
-#!/usr/bin/env python -t
+#!/usr/bin/env python3 -t
 
 """Trevor Stone's random signature script."""
 
@@ -117,12 +117,12 @@ def curse():
   return 'Thou %s!' % ' '.join([w.one() for w in lists])
 
 def siteAndCurse(width):
-  websites = ('https://trevorstone.org/', 'https://flwyd.livejournal.com/',
-      'https://flwyd.dreamwidth.org/', 'https://twitter.com/flwyd',
-      'https://github.com/flwyd', 'https://www.flickr.com/photos/trevorstone')
+  websites = ('https://trevorstone.org/', 'https://flwyd.dreamwidth.org/',
+              'https://twitter.com/flwyd', 'https://github.com/flwyd',
+              'https://www.flickr.com/photos/trevorstone')
   while True:
     website = random.choice(websites)
-    s = justify(website, curse(), width) 
+    s = justify(website, curse(), width)
     if len(s) <= width:
       return s
 
