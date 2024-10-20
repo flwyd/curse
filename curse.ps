@@ -1,6 +1,7 @@
+/usr/bin/true pop pop pop % ; exec gsnd -q -dRandomSeed=${RANDOM-$(date +%s)} -- "$0" "$@"
 %!PS
-% Run with GhostScript: `gsnd -q curse.ps` or
-% `gsnd -q -dNumCurses 5 -dRandomSeed=$RANDOM curse.ps`
+% Run with GhostScript: `gsnd -q -- curse.ps 5` or
+% `gsnd -q -dNumCurses=5 -dRandomSeed=$((RANDOM)) -- curse.ps`
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Shakespearian Curse Generator -- Based on lists compiled by Jerry Maguire, %
 %     English teacher at Center Grove High School in Greenwood, Indiana.     %
@@ -77,10 +78,8 @@ end } def
 
 /promptnum { % -- int
   {
-    {
-      (Number of curses: ) print flush
-      (%stdin) (r) file 20 string readline { exit } if
-    } loop
+    (Number of curses: ) print flush
+    (%lineedit) (r) file dup bytesavailable string readstring pop
     {cvi} stopped {pop} {exit} ifelse
   } loop
 } def
@@ -96,6 +95,3 @@ end } def
 /RandomSeed where { /RandomSeed get } { realtime } ifelse srand
 % Generate curses and print 'em out
 { curse exec print (\n) print } repeat
-% Catch anything that didn't get popped off the stack
-pstack
-quit
