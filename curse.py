@@ -69,7 +69,7 @@ lists = (adjective1, adjective2, noun)
 def curse(n=1, file=sys.stdout):
     """Print n curses to file-like object."""
     for i in range(n):
-        print('Thou', *[str(w) for w in lists], file=file)
+        print('Thou ', ' '.join([str(w) for w in lists]), '!', sep='', file=file)
 
 # When running as script, get number and do curses
 if __name__ == "__main__":
