@@ -5,6 +5,7 @@
 *****************************************************************************/
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 
 #define NUMADJECTIVE1 73  /* because C doesn't keep track */
 char* adjective1[NUMADJECTIVE1] = { "artless", "bawdy", "beslubbering",
