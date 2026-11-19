@@ -1,4 +1,4 @@
-#!/usr/bin/env python3 -t
+#!/usr/bin/env python3
 
 """Trevor Stone's random signature script."""
 

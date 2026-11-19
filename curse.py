@@ -1,4 +1,4 @@
-#!/usr/bin/env python3 -t
+#!/usr/bin/env python3
 ##############################################################################
 # Shakespearian Curse Generator -- Based on lists compiled by Jerry Maguire, #
 #     English teacher at Center Grove High School in Greenwood, Indiana.     #
